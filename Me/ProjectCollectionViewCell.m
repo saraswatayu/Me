@@ -24,7 +24,9 @@
 {
     self.layer.masksToBounds = NO;
     self.layer.shadowOpacity = 0.75f;
-    self.layer.shadowRadius = 10.0f;
+    self.layer.shadowRadius = 5.0f;
+    self.layer.shadowOffset = CGSizeZero;
+    self.layer.shadowPath = [UIBezierPath bezierPathWithRect:self.bounds].CGPath;
     self.layer.shouldRasterize = NO;
 }
 
@@ -35,9 +37,9 @@
     descriptionLabel.text = project.details;
     
     if (project.link == NULL)
-        [linkButton setTitle:@"Demo" forState:UIControlStateNormal];
+        [linkButton setTitle:@"TRY A DEMO" forState:UIControlStateNormal];
     else
-        [linkButton setTitle:@"View on the App Store" forState:UIControlStateNormal];
+        [linkButton setTitle:@"CHECK IT OUT" forState:UIControlStateNormal];
 }
 
 @end

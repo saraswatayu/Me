@@ -1,5 +1,5 @@
 //
-//  MainViewController.h
+//  ProjectViewController.h
 //  Me
 //
 //  Created by Ayush Saraswat on 12/28/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UIViewController
-
-@property (nonatomic, weak) IBOutlet UIScrollView *scrollView;
+@interface ProjectViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @end
