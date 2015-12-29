@@ -10,4 +10,6 @@
 
 @interface ProjectViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate, UIViewControllerTransitioningDelegate>
 
+@property (nonatomic, weak) IBOutlet UICollectionView *collectionView;
+
 @end
