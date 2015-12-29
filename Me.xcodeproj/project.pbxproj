@@ -9,10 +9,18 @@
 /* Begin PBXBuildFile section */
 		2A167EAB1C2DFDE400AB28FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A167EAA1C2DFDE400AB28FC /* main.m */; };
 		2A167EAE1C2DFDE400AB28FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A167EAD1C2DFDE400AB28FC /* AppDelegate.m */; };
-		2A167EB11C2DFDE400AB28FC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A167EB01C2DFDE400AB28FC /* ViewController.m */; };
 		2A167EB41C2DFDE400AB28FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A167EB21C2DFDE400AB28FC /* Main.storyboard */; };
 		2A167EB61C2DFDE400AB28FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A167EB51C2DFDE400AB28FC /* Assets.xcassets */; };
 		2A167EB91C2DFDE400AB28FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A167EB71C2DFDE400AB28FC /* LaunchScreen.storyboard */; };
+		2A167EC91C31CD6500AB28FC /* IntroductionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A167EC81C31CD6500AB28FC /* IntroductionView.m */; };
+		2A167ECF1C31D19C00AB28FC /* ProjectCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A167ECE1C31D19C00AB28FC /* ProjectCollectionViewCell.m */; };
+		2A167ED31C31DA8200AB28FC /* ProjectCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A167ED21C31DA8200AB28FC /* ProjectCollectionViewController.m */; };
+		2A167ED51C31DF6700AB28FC /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A167ED41C31DF6700AB28FC /* Project.m */; };
+		2A167EDD1C31F45500AB28FC /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A167EDC1C31F45500AB28FC /* MainViewController.m */; };
+		2A167EDF1C31F72A00AB28FC /* ProjectCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A167EDE1C31F72A00AB28FC /* ProjectCollectionView.xib */; };
+		2A167EE11C31F76700AB28FC /* ProjectCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A167EE01C31F76700AB28FC /* ProjectCollectionViewCell.xib */; };
+		2A167EE41C3202E500AB28FC /* IntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A167EE31C3202E500AB28FC /* IntroductionViewController.m */; };
+		2A167EEA1C32035B00AB28FC /* UIButton+Pulse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A167EE91C32035B00AB28FC /* UIButton+Pulse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +28,26 @@
 		2A167EAA1C2DFDE400AB28FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2A167EAC1C2DFDE400AB28FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2A167EAD1C2DFDE400AB28FC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2A167EAF1C2DFDE400AB28FC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2A167EB01C2DFDE400AB28FC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2A167EB31C2DFDE400AB28FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2A167EB51C2DFDE400AB28FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A167EB81C2DFDE400AB28FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A167EBA1C2DFDE400AB28FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A167EC71C31CD6500AB28FC /* IntroductionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroductionView.h; sourceTree = "<group>"; };
+		2A167EC81C31CD6500AB28FC /* IntroductionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroductionView.m; sourceTree = "<group>"; };
+		2A167ECD1C31D19C00AB28FC /* ProjectCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectCollectionViewCell.h; sourceTree = "<group>"; };
+		2A167ECE1C31D19C00AB28FC /* ProjectCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectCollectionViewCell.m; sourceTree = "<group>"; };
+		2A167ED01C31D92100AB28FC /* Project.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
+		2A167ED11C31DA8200AB28FC /* ProjectCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectCollectionViewController.h; sourceTree = "<group>"; };
+		2A167ED21C31DA8200AB28FC /* ProjectCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectCollectionViewController.m; sourceTree = "<group>"; };
+		2A167ED41C31DF6700AB28FC /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project.m; sourceTree = "<group>"; };
+		2A167EDB1C31F45500AB28FC /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		2A167EDC1C31F45500AB28FC /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		2A167EDE1C31F72A00AB28FC /* ProjectCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectCollectionView.xib; sourceTree = "<group>"; };
+		2A167EE01C31F76700AB28FC /* ProjectCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectCollectionViewCell.xib; sourceTree = "<group>"; };
+		2A167EE21C3202E500AB28FC /* IntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroductionViewController.h; sourceTree = "<group>"; };
+		2A167EE31C3202E500AB28FC /* IntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroductionViewController.m; sourceTree = "<group>"; };
+		2A167EE81C32035B00AB28FC /* UIButton+Pulse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Pulse.h"; sourceTree = "<group>"; };
+		2A167EE91C32035B00AB28FC /* UIButton+Pulse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Pulse.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +82,23 @@
 			children = (
 				2A167EAC1C2DFDE400AB28FC /* AppDelegate.h */,
 				2A167EAD1C2DFDE400AB28FC /* AppDelegate.m */,
-				2A167EAF1C2DFDE400AB28FC /* ViewController.h */,
-				2A167EB01C2DFDE400AB28FC /* ViewController.m */,
+				2A167EDB1C31F45500AB28FC /* MainViewController.h */,
+				2A167EDC1C31F45500AB28FC /* MainViewController.m */,
+				2A167EC71C31CD6500AB28FC /* IntroductionView.h */,
+				2A167EC81C31CD6500AB28FC /* IntroductionView.m */,
+				2A167ED11C31DA8200AB28FC /* ProjectCollectionViewController.h */,
+				2A167ED21C31DA8200AB28FC /* ProjectCollectionViewController.m */,
+				2A167ECD1C31D19C00AB28FC /* ProjectCollectionViewCell.h */,
+				2A167ECE1C31D19C00AB28FC /* ProjectCollectionViewCell.m */,
+				2A167ED01C31D92100AB28FC /* Project.h */,
+				2A167ED41C31DF6700AB28FC /* Project.m */,
 				2A167EB21C2DFDE400AB28FC /* Main.storyboard */,
+				2A167EE21C3202E500AB28FC /* IntroductionViewController.h */,
+				2A167EE31C3202E500AB28FC /* IntroductionViewController.m */,
+				2A167EE81C32035B00AB28FC /* UIButton+Pulse.h */,
+				2A167EE91C32035B00AB28FC /* UIButton+Pulse.m */,
+				2A167EDE1C31F72A00AB28FC /* ProjectCollectionView.xib */,
+				2A167EE01C31F76700AB28FC /* ProjectCollectionViewCell.xib */,
 				2A167EB51C2DFDE400AB28FC /* Assets.xcassets */,
 				2A167EB71C2DFDE400AB28FC /* LaunchScreen.storyboard */,
 				2A167EBA1C2DFDE400AB28FC /* Info.plist */,
@@ -136,6 +172,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A167EE11C31F76700AB28FC /* ProjectCollectionViewCell.xib in Resources */,
+				2A167EDF1C31F72A00AB28FC /* ProjectCollectionView.xib in Resources */,
 				2A167EB91C2DFDE400AB28FC /* LaunchScreen.storyboard in Resources */,
 				2A167EB61C2DFDE400AB28FC /* Assets.xcassets in Resources */,
 				2A167EB41C2DFDE400AB28FC /* Main.storyboard in Resources */,
@@ -149,8 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A167EB11C2DFDE400AB28FC /* ViewController.m in Sources */,
+				2A167EE41C3202E500AB28FC /* IntroductionViewController.m in Sources */,
+				2A167ECF1C31D19C00AB28FC /* ProjectCollectionViewCell.m in Sources */,
+				2A167ED31C31DA8200AB28FC /* ProjectCollectionViewController.m in Sources */,
+				2A167EEA1C32035B00AB28FC /* UIButton+Pulse.m in Sources */,
 				2A167EAE1C2DFDE400AB28FC /* AppDelegate.m in Sources */,
+				2A167EC91C31CD6500AB28FC /* IntroductionView.m in Sources */,
+				2A167EDD1C31F45500AB28FC /* MainViewController.m in Sources */,
+				2A167ED51C31DF6700AB28FC /* Project.m in Sources */,
 				2A167EAB1C2DFDE400AB28FC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +311,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.ayush.Me;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -278,6 +323,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.ayush.Me;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
