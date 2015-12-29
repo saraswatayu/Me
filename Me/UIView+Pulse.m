@@ -1,14 +1,14 @@
 //
-//  UIButton+Pulse.m
+//  UIView+Pulse.m
 //  Me
 //
 //  Created by Ayush Saraswat on 12/28/15.
 //  Copyright © 2015 Ayush Saraswat. All rights reserved.
 //
 
-#import "UIButton+Pulse.h"
+#import "UIView+Pulse.h"
 
-@implementation UIButton (Pulse)
+@implementation UIView (Pulse)
 
 - (void)startPulsing
 {

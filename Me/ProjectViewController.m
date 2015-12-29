@@ -9,6 +9,7 @@
 #import "ProjectViewController.h"
 #import "ProjectCollectionViewCell.h"
 #import "Project.h"
+#import "NextAnimation.h"
 
 @interface ProjectViewController ()
 
@@ -68,4 +69,15 @@
     else
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:selectedProject.link]];
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    segue.destinationViewController.transitioningDelegate = self;
+}
+
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
+{
+    return [[NextAnimation alloc] init];
+}
+
 @end

@@ -17,8 +17,9 @@
 		2A167EDF1C31F72A00AB28FC /* ProjectCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A167EDE1C31F72A00AB28FC /* ProjectCollectionView.xib */; };
 		2A167EE11C31F76700AB28FC /* ProjectCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A167EE01C31F76700AB28FC /* ProjectCollectionViewCell.xib */; };
 		2A167EE41C3202E500AB28FC /* IntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A167EE31C3202E500AB28FC /* IntroductionViewController.m */; };
-		2A167EEA1C32035B00AB28FC /* UIButton+Pulse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A167EE91C32035B00AB28FC /* UIButton+Pulse.m */; };
+		2A167EEA1C32035B00AB28FC /* UIView+Pulse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A167EE91C32035B00AB28FC /* UIView+Pulse.m */; };
 		2A167EED1C32378D00AB28FC /* ProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A167EEC1C32378D00AB28FC /* ProjectViewController.m */; };
+		2A167EF01C3247CB00AB28FC /* NextAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A167EEF1C3247CB00AB28FC /* NextAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,10 +39,12 @@
 		2A167EE01C31F76700AB28FC /* ProjectCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectCollectionViewCell.xib; sourceTree = "<group>"; };
 		2A167EE21C3202E500AB28FC /* IntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroductionViewController.h; sourceTree = "<group>"; };
 		2A167EE31C3202E500AB28FC /* IntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroductionViewController.m; sourceTree = "<group>"; };
-		2A167EE81C32035B00AB28FC /* UIButton+Pulse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Pulse.h"; sourceTree = "<group>"; };
-		2A167EE91C32035B00AB28FC /* UIButton+Pulse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Pulse.m"; sourceTree = "<group>"; };
+		2A167EE81C32035B00AB28FC /* UIView+Pulse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Pulse.h"; sourceTree = "<group>"; };
+		2A167EE91C32035B00AB28FC /* UIView+Pulse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Pulse.m"; sourceTree = "<group>"; };
 		2A167EEB1C32378D00AB28FC /* ProjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectViewController.h; sourceTree = "<group>"; };
 		2A167EEC1C32378D00AB28FC /* ProjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectViewController.m; sourceTree = "<group>"; };
+		2A167EEE1C3247CB00AB28FC /* NextAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextAnimation.h; sourceTree = "<group>"; };
+		2A167EEF1C3247CB00AB28FC /* NextAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextAnimation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,14 +82,16 @@
 				2A167EB21C2DFDE400AB28FC /* Main.storyboard */,
 				2A167EE21C3202E500AB28FC /* IntroductionViewController.h */,
 				2A167EE31C3202E500AB28FC /* IntroductionViewController.m */,
+				2A167EEE1C3247CB00AB28FC /* NextAnimation.h */,
+				2A167EEF1C3247CB00AB28FC /* NextAnimation.m */,
 				2A167ED01C31D92100AB28FC /* Project.h */,
 				2A167ED41C31DF6700AB28FC /* Project.m */,
 				2A167EEB1C32378D00AB28FC /* ProjectViewController.h */,
 				2A167EEC1C32378D00AB28FC /* ProjectViewController.m */,
 				2A167ECD1C31D19C00AB28FC /* ProjectCollectionViewCell.h */,
 				2A167ECE1C31D19C00AB28FC /* ProjectCollectionViewCell.m */,
-				2A167EE81C32035B00AB28FC /* UIButton+Pulse.h */,
-				2A167EE91C32035B00AB28FC /* UIButton+Pulse.m */,
+				2A167EE81C32035B00AB28FC /* UIView+Pulse.h */,
+				2A167EE91C32035B00AB28FC /* UIView+Pulse.m */,
 				2A167EDE1C31F72A00AB28FC /* ProjectCollectionView.xib */,
 				2A167EE01C31F76700AB28FC /* ProjectCollectionViewCell.xib */,
 				2A167EB51C2DFDE400AB28FC /* Assets.xcassets */,
@@ -178,8 +183,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A167EE41C3202E500AB28FC /* IntroductionViewController.m in Sources */,
+				2A167EF01C3247CB00AB28FC /* NextAnimation.m in Sources */,
 				2A167ECF1C31D19C00AB28FC /* ProjectCollectionViewCell.m in Sources */,
-				2A167EEA1C32035B00AB28FC /* UIButton+Pulse.m in Sources */,
+				2A167EEA1C32035B00AB28FC /* UIView+Pulse.m in Sources */,
 				2A167EED1C32378D00AB28FC /* ProjectViewController.m in Sources */,
 				2A167EAE1C2DFDE400AB28FC /* AppDelegate.m in Sources */,
 				2A167ED51C31DF6700AB28FC /* Project.m in Sources */,

@@ -8,7 +8,8 @@
 
 #import "IntroductionViewController.h"
 
-#import "UIButton+Pulse.h"
+#import "UIView+Pulse.h"
+#import "NextAnimation.h"
 
 @interface IntroductionViewController ()
 
@@ -44,19 +45,14 @@
         currentSpinningIndex = 0;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    segue.destinationViewController.transitioningDelegate = self;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
+{
+    return [[NextAnimation alloc] init];
 }
-*/
 
 @end

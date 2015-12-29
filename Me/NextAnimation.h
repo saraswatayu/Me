@@ -1,5 +1,5 @@
 //
-//  UIButton+Pulse.h
+//  NextAnimation.h
 //  Me
 //
 //  Created by Ayush Saraswat on 12/28/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIButton (Pulse)
-
-- (void)startPulsing;
+@interface NextAnimation : NSObject <UIViewControllerAnimatedTransitioning>
 
 @end
