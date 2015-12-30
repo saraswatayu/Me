@@ -22,9 +22,32 @@
 		2A167EF51C333A1D00AB28FC /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A167EF41C333A1D00AB28FC /* AboutMeViewController.m */; };
 		2A167EF81C336F3E00AB28FC /* UIViewController+Backing.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A167EF71C336F3E00AB28FC /* UIViewController+Backing.m */; };
 		2A167EFD1C33745600AB28FC /* ImageAlbumCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A167EFC1C33745600AB28FC /* ImageAlbumCollectionViewCell.m */; };
+		2A167F2D1C343F7C00AB28FC /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A167F221C343F7C00AB28FC /* Badge.swift */; };
+		2A167F2E1C343F7C00AB28FC /* BadgeCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A167F231C343F7C00AB28FC /* BadgeCollectionHeaderView.swift */; };
+		2A167F2F1C343F7C00AB28FC /* BadgeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A167F241C343F7C00AB28FC /* BadgeCollectionViewCell.swift */; };
+		2A167F301C343F7C00AB28FC /* BadgeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A167F251C343F7C00AB28FC /* BadgeCollectionViewController.swift */; };
+		2A167F311C343F7C00AB28FC /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A167F261C343F7C00AB28FC /* Category.swift */; };
+		2A167F321C343F7C00AB28FC /* KABadgeCategories.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A167F271C343F7C00AB28FC /* KABadgeCategories.json */; };
+		2A167F331C343F7C00AB28FC /* KABadges.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A167F281C343F7C00AB28FC /* KABadges.json */; };
+		2A167F341C343F7C00AB28FC /* KABadges.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A167F291C343F7C00AB28FC /* KABadges.xcdatamodeld */; };
+		2A167F351C343F7C00AB28FC /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A167F2B1C343F7C00AB28FC /* Networker.swift */; };
+		2A167F361C343F7C00AB28FC /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A167F2C1C343F7C00AB28FC /* Utilities.swift */; };
+		2A167F391C34415100AB28FC /* KACoreDataStackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A167F381C34415100AB28FC /* KACoreDataStackManager.swift */; };
+		2A167F451C3444FB00AB28FC /* CollectionViewCellForPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A167F3B1C3444FB00AB28FC /* CollectionViewCellForPicture.swift */; };
+		2A167F461C3444FB00AB28FC /* CoreDataStackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A167F3C1C3444FB00AB28FC /* CoreDataStackManager.swift */; };
+		2A167F471C3444FB00AB28FC /* Flickr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A167F3D1C3444FB00AB28FC /* Flickr.swift */; };
+		2A167F481C3444FB00AB28FC /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A167F3E1C3444FB00AB28FC /* ImageCache.swift */; };
+		2A167F491C3444FB00AB28FC /* MKMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A167F3F1C3444FB00AB28FC /* MKMapViewController.swift */; };
+		2A167F4A1C3444FB00AB28FC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A167F401C3444FB00AB28FC /* Model.xcdatamodeld */; };
+		2A167F4B1C3444FB00AB28FC /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A167F421C3444FB00AB28FC /* Picture.swift */; };
+		2A167F4C1C3444FB00AB28FC /* PictureSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A167F431C3444FB00AB28FC /* PictureSelectionViewController.swift */; };
+		2A167F4D1C3444FB00AB28FC /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A167F441C3444FB00AB28FC /* Pin.swift */; };
+		2A167F531C34487200AB28FC /* imgXButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A167F521C34487200AB28FC /* imgXButton.png */; };
+		C62B32FDCE6D6C125A2C2845 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E4182EB000DF1AB1104AC8 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15B33FCFADAC5D0F1E552E55 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		2A167EA61C2DFDE400AB28FC /* Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Me.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A167EAA1C2DFDE400AB28FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2A167EAC1C2DFDE400AB28FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,6 +75,30 @@
 		2A167EF71C336F3E00AB28FC /* UIViewController+Backing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Backing.m"; sourceTree = "<group>"; };
 		2A167EFB1C33745600AB28FC /* ImageAlbumCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageAlbumCollectionViewCell.h; sourceTree = "<group>"; };
 		2A167EFC1C33745600AB28FC /* ImageAlbumCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageAlbumCollectionViewCell.m; sourceTree = "<group>"; };
+		2A167F221C343F7C00AB28FC /* Badge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Badge.swift; path = "KA Badges/Badge.swift"; sourceTree = "<group>"; };
+		2A167F231C343F7C00AB28FC /* BadgeCollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BadgeCollectionHeaderView.swift; path = "KA Badges/BadgeCollectionHeaderView.swift"; sourceTree = "<group>"; };
+		2A167F241C343F7C00AB28FC /* BadgeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BadgeCollectionViewCell.swift; path = "KA Badges/BadgeCollectionViewCell.swift"; sourceTree = "<group>"; };
+		2A167F251C343F7C00AB28FC /* BadgeCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BadgeCollectionViewController.swift; path = "KA Badges/BadgeCollectionViewController.swift"; sourceTree = "<group>"; };
+		2A167F261C343F7C00AB28FC /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Category.swift; path = "KA Badges/Category.swift"; sourceTree = "<group>"; };
+		2A167F271C343F7C00AB28FC /* KABadgeCategories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = KABadgeCategories.json; path = "KA Badges/KABadgeCategories.json"; sourceTree = "<group>"; };
+		2A167F281C343F7C00AB28FC /* KABadges.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = KABadges.json; path = "KA Badges/KABadges.json"; sourceTree = "<group>"; };
+		2A167F2A1C343F7C00AB28FC /* KABadges.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KABadges.xcdatamodel; sourceTree = "<group>"; };
+		2A167F2B1C343F7C00AB28FC /* Networker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Networker.swift; path = "KA Badges/Networker.swift"; sourceTree = "<group>"; };
+		2A167F2C1C343F7C00AB28FC /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = "KA Badges/Utilities.swift"; sourceTree = "<group>"; };
+		2A167F371C34400400AB28FC /* Me-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Me-Bridging-Header.h"; sourceTree = "<group>"; };
+		2A167F381C34415100AB28FC /* KACoreDataStackManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KACoreDataStackManager.swift; path = "KA Badges/KACoreDataStackManager.swift"; sourceTree = "<group>"; };
+		2A167F3B1C3444FB00AB28FC /* CollectionViewCellForPicture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCellForPicture.swift; sourceTree = "<group>"; };
+		2A167F3C1C3444FB00AB28FC /* CoreDataStackManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStackManager.swift; sourceTree = "<group>"; };
+		2A167F3D1C3444FB00AB28FC /* Flickr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flickr.swift; sourceTree = "<group>"; };
+		2A167F3E1C3444FB00AB28FC /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		2A167F3F1C3444FB00AB28FC /* MKMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKMapViewController.swift; sourceTree = "<group>"; };
+		2A167F411C3444FB00AB28FC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		2A167F421C3444FB00AB28FC /* Picture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
+		2A167F431C3444FB00AB28FC /* PictureSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureSelectionViewController.swift; sourceTree = "<group>"; };
+		2A167F441C3444FB00AB28FC /* Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pin.swift; sourceTree = "<group>"; };
+		2A167F521C34487200AB28FC /* imgXButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgXButton.png; sourceTree = "<group>"; };
+		87E4182EB000DF1AB1104AC8 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99E85718997F6AD47A2F2EEE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +107,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A167EF21C3339FF00AB28FC /* MapKit.framework in Frameworks */,
+				C62B32FDCE6D6C125A2C2845 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24A93219E33A8F29C651A301 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99E85718997F6AD47A2F2EEE /* Pods.debug.xcconfig */,
+				15B33FCFADAC5D0F1E552E55 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2A167E9D1C2DFDE400AB28FC = {
 			isa = PBXGroup;
 			children = (
 				2A167EA81C2DFDE400AB28FC /* Me */,
 				2A167EA71C2DFDE400AB28FC /* Products */,
+				24A93219E33A8F29C651A301 /* Pods */,
+				FBE9FB57A00E84C1D63597EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,8 +151,10 @@
 				2A167F011C338D5D00AB28FC /* Projects */,
 				2A167EAC1C2DFDE400AB28FC /* AppDelegate.h */,
 				2A167EAD1C2DFDE400AB28FC /* AppDelegate.m */,
+				2A167F371C34400400AB28FC /* Me-Bridging-Header.h */,
 				2A167EB21C2DFDE400AB28FC /* Main.storyboard */,
 				2A167EB51C2DFDE400AB28FC /* Assets.xcassets */,
+				2A167F521C34487200AB28FC /* imgXButton.png */,
 				2A167EB71C2DFDE400AB28FC /* LaunchScreen.storyboard */,
 				2A167EBA1C2DFDE400AB28FC /* Info.plist */,
 				2A167EA91C2DFDE400AB28FC /* Supporting Files */,
@@ -165,6 +226,8 @@
 				2A167EEC1C32378D00AB28FC /* ProjectViewController.m */,
 				2A167F021C338D6C00AB28FC /* Models */,
 				2A167F031C338D7800AB28FC /* Cells */,
+				2A167F1F1C343E5B00AB28FC /* KA Badges */,
+				2A167F3A1C3444C300AB28FC /* Virtual Tourist */,
 			);
 			name = Projects;
 			sourceTree = "<group>";
@@ -187,6 +250,120 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		2A167F1F1C343E5B00AB28FC /* KA Badges */ = {
+			isa = PBXGroup;
+			children = (
+				2A167F571C3449BF00AB28FC /* View Controllers + Cells */,
+				2A167F581C3449D100AB28FC /* Networking */,
+				2A167F541C34499600AB28FC /* Core Data */,
+				2A167F2C1C343F7C00AB28FC /* Utilities.swift */,
+			);
+			name = "KA Badges";
+			sourceTree = "<group>";
+		};
+		2A167F3A1C3444C300AB28FC /* Virtual Tourist */ = {
+			isa = PBXGroup;
+			children = (
+				2A167F511C3445E500AB28FC /* View Controllers + Cells */,
+				2A167F501C3445C800AB28FC /* Flickr */,
+				2A167F4E1C3445B700AB28FC /* Core Data */,
+			);
+			name = "Virtual Tourist";
+			sourceTree = "<group>";
+		};
+		2A167F4E1C3445B700AB28FC /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				2A167F3C1C3444FB00AB28FC /* CoreDataStackManager.swift */,
+				2A167F401C3444FB00AB28FC /* Model.xcdatamodeld */,
+				2A167F4F1C3445BD00AB28FC /* Models */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		2A167F4F1C3445BD00AB28FC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2A167F421C3444FB00AB28FC /* Picture.swift */,
+				2A167F441C3444FB00AB28FC /* Pin.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2A167F501C3445C800AB28FC /* Flickr */ = {
+			isa = PBXGroup;
+			children = (
+				2A167F3D1C3444FB00AB28FC /* Flickr.swift */,
+				2A167F3E1C3444FB00AB28FC /* ImageCache.swift */,
+			);
+			name = Flickr;
+			sourceTree = "<group>";
+		};
+		2A167F511C3445E500AB28FC /* View Controllers + Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2A167F3B1C3444FB00AB28FC /* CollectionViewCellForPicture.swift */,
+				2A167F3F1C3444FB00AB28FC /* MKMapViewController.swift */,
+				2A167F431C3444FB00AB28FC /* PictureSelectionViewController.swift */,
+			);
+			name = "View Controllers + Cells";
+			sourceTree = "<group>";
+		};
+		2A167F541C34499600AB28FC /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				2A167F381C34415100AB28FC /* KACoreDataStackManager.swift */,
+				2A167F291C343F7C00AB28FC /* KABadges.xcdatamodeld */,
+				2A167F551C3449A300AB28FC /* Offline Copy */,
+				2A167F561C3449AC00AB28FC /* Models */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		2A167F551C3449A300AB28FC /* Offline Copy */ = {
+			isa = PBXGroup;
+			children = (
+				2A167F271C343F7C00AB28FC /* KABadgeCategories.json */,
+				2A167F281C343F7C00AB28FC /* KABadges.json */,
+			);
+			name = "Offline Copy";
+			sourceTree = "<group>";
+		};
+		2A167F561C3449AC00AB28FC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2A167F221C343F7C00AB28FC /* Badge.swift */,
+				2A167F261C343F7C00AB28FC /* Category.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2A167F571C3449BF00AB28FC /* View Controllers + Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2A167F231C343F7C00AB28FC /* BadgeCollectionHeaderView.swift */,
+				2A167F241C343F7C00AB28FC /* BadgeCollectionViewCell.swift */,
+				2A167F251C343F7C00AB28FC /* BadgeCollectionViewController.swift */,
+			);
+			name = "View Controllers + Cells";
+			sourceTree = "<group>";
+		};
+		2A167F581C3449D100AB28FC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2A167F2B1C343F7C00AB28FC /* Networker.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		FBE9FB57A00E84C1D63597EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87E4182EB000DF1AB1104AC8 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -194,9 +371,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A167EBD1C2DFDE400AB28FC /* Build configuration list for PBXNativeTarget "Me" */;
 			buildPhases = (
+				DF6EEFD13E7470619177B472 /* Check Pods Manifest.lock */,
 				2A167EA21C2DFDE400AB28FC /* Sources */,
 				2A167EA31C2DFDE400AB28FC /* Frameworks */,
 				2A167EA41C2DFDE400AB28FC /* Resources */,
+				76ED55F87C1F69872EFB0F87 /* Embed Pods Frameworks */,
+				27B19E372689F31533E17ECC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,11 +431,62 @@
 			files = (
 				2A167EB91C2DFDE400AB28FC /* LaunchScreen.storyboard in Resources */,
 				2A167EB61C2DFDE400AB28FC /* Assets.xcassets in Resources */,
+				2A167F531C34487200AB28FC /* imgXButton.png in Resources */,
+				2A167F331C343F7C00AB28FC /* KABadges.json in Resources */,
 				2A167EB41C2DFDE400AB28FC /* Main.storyboard in Resources */,
+				2A167F321C343F7C00AB28FC /* KABadgeCategories.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27B19E372689F31533E17ECC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76ED55F87C1F69872EFB0F87 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF6EEFD13E7470619177B472 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2A167EA21C2DFDE400AB28FC /* Sources */ = {
@@ -268,11 +499,29 @@
 				2A167EF51C333A1D00AB28FC /* AboutMeViewController.m in Sources */,
 				2A167EF01C3247CB00AB28FC /* NextAnimation.m in Sources */,
 				2A167ECF1C31D19C00AB28FC /* ProjectCollectionViewCell.m in Sources */,
+				2A167F2E1C343F7C00AB28FC /* BadgeCollectionHeaderView.swift in Sources */,
+				2A167F391C34415100AB28FC /* KACoreDataStackManager.swift in Sources */,
 				2A167EEA1C32035B00AB28FC /* UIView+Pulse.m in Sources */,
 				2A167EED1C32378D00AB28FC /* ProjectViewController.m in Sources */,
+				2A167F2F1C343F7C00AB28FC /* BadgeCollectionViewCell.swift in Sources */,
+				2A167F4A1C3444FB00AB28FC /* Model.xcdatamodeld in Sources */,
+				2A167F4C1C3444FB00AB28FC /* PictureSelectionViewController.swift in Sources */,
+				2A167F311C343F7C00AB28FC /* Category.swift in Sources */,
+				2A167F471C3444FB00AB28FC /* Flickr.swift in Sources */,
 				2A167EAE1C2DFDE400AB28FC /* AppDelegate.m in Sources */,
+				2A167F461C3444FB00AB28FC /* CoreDataStackManager.swift in Sources */,
+				2A167F301C343F7C00AB28FC /* BadgeCollectionViewController.swift in Sources */,
+				2A167F491C3444FB00AB28FC /* MKMapViewController.swift in Sources */,
+				2A167F4B1C3444FB00AB28FC /* Picture.swift in Sources */,
+				2A167F4D1C3444FB00AB28FC /* Pin.swift in Sources */,
+				2A167F351C343F7C00AB28FC /* Networker.swift in Sources */,
 				2A167ED51C31DF6700AB28FC /* Project.m in Sources */,
+				2A167F481C3444FB00AB28FC /* ImageCache.swift in Sources */,
+				2A167F2D1C343F7C00AB28FC /* Badge.swift in Sources */,
+				2A167F451C3444FB00AB28FC /* CollectionViewCellForPicture.swift in Sources */,
 				2A167EAB1C2DFDE400AB28FC /* main.m in Sources */,
+				2A167F361C343F7C00AB28FC /* Utilities.swift in Sources */,
+				2A167F341C343F7C00AB28FC /* KABadges.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +631,7 @@
 		};
 		2A167EBE1C2DFDE400AB28FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99E85718997F6AD47A2F2EEE /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -397,6 +647,7 @@
 		};
 		2A167EBF1C2DFDE400AB28FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15B33FCFADAC5D0F1E552E55 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -431,6 +682,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2A167F291C343F7C00AB28FC /* KABadges.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2A167F2A1C343F7C00AB28FC /* KABadges.xcdatamodel */,
+			);
+			currentVersion = 2A167F2A1C343F7C00AB28FC /* KABadges.xcdatamodel */;
+			name = KABadges.xcdatamodeld;
+			path = "KA Badges/KABadges.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		2A167F401C3444FB00AB28FC /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2A167F411C3444FB00AB28FC /* Model.xcdatamodel */,
+			);
+			currentVersion = 2A167F411C3444FB00AB28FC /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2A167E9E1C2DFDE400AB28FC /* Project object */;
 }

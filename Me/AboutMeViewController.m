@@ -10,6 +10,7 @@
 #import "NextAnimation.h"
 #import "ImageAlbumCollectionViewCell.h"
 #import "UIViewController+Backing.h"
+#import "UIView+Pulse.h"
 
 @interface AboutMeViewController ()
 
@@ -23,7 +24,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    components = @[@{@"images": @[[UIImage imageNamed:@"LRAR1"], [UIImage imageNamed:@"LRAR2"], [UIImage imageNamed:@"LRAR3"], [UIImage imageNamed:@"LRAR4"]], @"title": @"Little Rock, AR", @"description": @"i lived here."}, @{@"images": @[[UIImage imageNamed:@"LRAR1"], [UIImage imageNamed:@"LRAR2"], [UIImage imageNamed:@"LRAR3"], [UIImage imageNamed:@"LRAR4"]], @"title": @"Little Rock, AR", @"description": @"i lived here."}];
+    components = @[@{
+                       @"images": @[[UIImage imageNamed:@"LRAR1"], [UIImage imageNamed:@"LRAR2"], [UIImage imageNamed:@"LRAR3"], [UIImage imageNamed:@"LRAR4"]],
+                       @"title": @"LITTLE ROCK, AR",
+                       @"description": @"It served as the hub for all of my teenage adventures. It was here where I was introduced to the technology I work with today, and where I found my passion for swimming."},
+                   @{
+                       @"images": @[[UIImage imageNamed:@"LRAR1"], [UIImage imageNamed:@"LRAR2"], [UIImage imageNamed:@"LRAR3"], [UIImage imageNamed:@"LRAR4"]],
+                       @"title": @"Little Rock, AR",
+                       @"description": @"i lived here."
+                    }];
+    
+    [self.previousButton startPulsing];
+    [self.nextButton startPulsing];
 }
 
 #pragma mark <UICollectionViewDataSource>

@@ -39,7 +39,7 @@
     if ([project.link containsString:@"itms://"])
         [linkButton setTitle:@"APP STORE" forState:UIControlStateNormal];
     else
-        [linkButton setTitle:@"GITHUB" forState:UIControlStateNormal];
+        [linkButton setTitle:@"DEMO" forState:UIControlStateNormal];
 }
 
 @end

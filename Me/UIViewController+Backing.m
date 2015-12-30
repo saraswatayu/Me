@@ -18,11 +18,15 @@
 
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
 {
+    if ([presented isKindOfClass:[UINavigationController class]])
+        return NULL;
     return [[NextAnimation alloc] initWithDirection:YES];
 }
 
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
 {
+    if ([dismissed isKindOfClass:[UINavigationController class]])
+        return NULL;
     return [[NextAnimation alloc] initWithDirection:NO];
 }
 
