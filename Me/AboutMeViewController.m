@@ -25,13 +25,21 @@
     [super viewDidLoad];
     
     components = @[@{
-                       @"images": @[[UIImage imageNamed:@"LRAR1"], [UIImage imageNamed:@"LRAR2"], [UIImage imageNamed:@"LRAR3"], [UIImage imageNamed:@"LRAR4"]],
-                       @"title": @"LITTLE ROCK, AR",
-                       @"description": @"It served as the hub for all of my teenage adventures. It was here where I was introduced to the technology I work with today, and where I found my passion for swimming."},
+                       @"images": @[[UIImage imageNamed:@"LRCentral"]],
+                       @"title": @"High School - 2010",
+                       @"description": @"The transition to high school was when I discovered a new interest in software development. It was also around this time that I realized I needed a way to get away from it all, which I found in swimming."},
                    @{
-                       @"images": @[[UIImage imageNamed:@"LRAR1"], [UIImage imageNamed:@"LRAR2"], [UIImage imageNamed:@"LRAR3"], [UIImage imageNamed:@"LRAR4"]],
-                       @"title": @"Little Rock, AR",
-                       @"description": @"i lived here."
+                       @"images": @[[UIImage imageNamed:@"USC"]],
+                       @"title": @"USC - 2014",
+                       @"description": @"By 2014, I had become far more passionate about software development than I had ever expected, but I still wasn't sure if that's all I wanted to study. So I packed my bags and left home to study Computer Science and Business Administration at USC."},
+                   @{
+                       @"images": @[[UIImage imageNamed:@"Triathlon"]],
+                       @"title": @"Discovering New Hobbies",
+                       @"description": @"I'm always pushing my limits and now that my swimming career was over, I decided to turn to something just a little bit harder. Now I'm a part of USC's triathlon team, where I train for ultra-endurance running and triathlon events."},
+                   @{
+                       @"images": @[[UIImage imageNamed:@"Udacity Logo"]],
+                       @"title": @"Learning and Teaching",
+                       @"description": @"I now work at Udacity, where every day I get to learn more about iOS development and teach others who are just diving into it."
                     }];
     
     [self.previousButton startPulsing];
