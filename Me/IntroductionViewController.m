@@ -8,6 +8,7 @@
 
 #import "IntroductionViewController.h"
 
+#import "UIViewController+Backing.h"
 #import "UIView+Pulse.h"
 #import "NextAnimation.h"
 
@@ -23,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    rotatingLabels = @[@"student.", @"athlete.", @"engineer.", @"tinkerer."];
+    rotatingLabels = @[@"student", @"athlete", @"developer", @"photographer", @"wannabe designer", @"and so much more..."];
     
     currentSpinningIndex = 0;
     [NSTimer scheduledTimerWithTimeInterval:2.0f target:self selector:@selector(updateSpinnerText:) userInfo:nil repeats:YES];
@@ -43,16 +44,6 @@
     currentSpinningIndex++;
     if (currentSpinningIndex == [rotatingLabels count])
         currentSpinningIndex = 0;
-}
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    segue.destinationViewController.transitioningDelegate = self;
-}
-
-- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
-{
-    return [[NextAnimation alloc] init];
 }
 
 @end

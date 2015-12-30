@@ -14,12 +14,14 @@
 		2A167EB91C2DFDE400AB28FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A167EB71C2DFDE400AB28FC /* LaunchScreen.storyboard */; };
 		2A167ECF1C31D19C00AB28FC /* ProjectCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A167ECE1C31D19C00AB28FC /* ProjectCollectionViewCell.m */; };
 		2A167ED51C31DF6700AB28FC /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A167ED41C31DF6700AB28FC /* Project.m */; };
-		2A167EDF1C31F72A00AB28FC /* ProjectCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A167EDE1C31F72A00AB28FC /* ProjectCollectionView.xib */; };
-		2A167EE11C31F76700AB28FC /* ProjectCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A167EE01C31F76700AB28FC /* ProjectCollectionViewCell.xib */; };
 		2A167EE41C3202E500AB28FC /* IntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A167EE31C3202E500AB28FC /* IntroductionViewController.m */; };
 		2A167EEA1C32035B00AB28FC /* UIView+Pulse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A167EE91C32035B00AB28FC /* UIView+Pulse.m */; };
 		2A167EED1C32378D00AB28FC /* ProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A167EEC1C32378D00AB28FC /* ProjectViewController.m */; };
 		2A167EF01C3247CB00AB28FC /* NextAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A167EEF1C3247CB00AB28FC /* NextAnimation.m */; };
+		2A167EF21C3339FF00AB28FC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A167EF11C3339FF00AB28FC /* MapKit.framework */; };
+		2A167EF51C333A1D00AB28FC /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A167EF41C333A1D00AB28FC /* AboutMeViewController.m */; };
+		2A167EF81C336F3E00AB28FC /* UIViewController+Backing.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A167EF71C336F3E00AB28FC /* UIViewController+Backing.m */; };
+		2A167EFD1C33745600AB28FC /* ImageAlbumCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A167EFC1C33745600AB28FC /* ImageAlbumCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +37,6 @@
 		2A167ECE1C31D19C00AB28FC /* ProjectCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectCollectionViewCell.m; sourceTree = "<group>"; };
 		2A167ED01C31D92100AB28FC /* Project.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
 		2A167ED41C31DF6700AB28FC /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project.m; sourceTree = "<group>"; };
-		2A167EDE1C31F72A00AB28FC /* ProjectCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectCollectionView.xib; sourceTree = "<group>"; };
-		2A167EE01C31F76700AB28FC /* ProjectCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectCollectionViewCell.xib; sourceTree = "<group>"; };
 		2A167EE21C3202E500AB28FC /* IntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroductionViewController.h; sourceTree = "<group>"; };
 		2A167EE31C3202E500AB28FC /* IntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroductionViewController.m; sourceTree = "<group>"; };
 		2A167EE81C32035B00AB28FC /* UIView+Pulse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Pulse.h"; sourceTree = "<group>"; };
@@ -45,6 +45,13 @@
 		2A167EEC1C32378D00AB28FC /* ProjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectViewController.m; sourceTree = "<group>"; };
 		2A167EEE1C3247CB00AB28FC /* NextAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextAnimation.h; sourceTree = "<group>"; };
 		2A167EEF1C3247CB00AB28FC /* NextAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextAnimation.m; sourceTree = "<group>"; };
+		2A167EF11C3339FF00AB28FC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2A167EF31C333A1D00AB28FC /* AboutMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutMeViewController.h; sourceTree = "<group>"; };
+		2A167EF41C333A1D00AB28FC /* AboutMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMeViewController.m; sourceTree = "<group>"; };
+		2A167EF61C336F3E00AB28FC /* UIViewController+Backing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Backing.h"; sourceTree = "<group>"; };
+		2A167EF71C336F3E00AB28FC /* UIViewController+Backing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Backing.m"; sourceTree = "<group>"; };
+		2A167EFB1C33745600AB28FC /* ImageAlbumCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageAlbumCollectionViewCell.h; sourceTree = "<group>"; };
+		2A167EFC1C33745600AB28FC /* ImageAlbumCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageAlbumCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A167EF21C3339FF00AB28FC /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,23 +85,14 @@
 		2A167EA81C2DFDE400AB28FC /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				2A167F001C338D5400AB28FC /* Categories */,
+				2A167EFF1C338D4B00AB28FC /* Transition */,
+				2A167EFE1C338D3F00AB28FC /* Introduction */,
+				2A167EF91C33744300AB28FC /* About Me */,
+				2A167F011C338D5D00AB28FC /* Projects */,
 				2A167EAC1C2DFDE400AB28FC /* AppDelegate.h */,
 				2A167EAD1C2DFDE400AB28FC /* AppDelegate.m */,
 				2A167EB21C2DFDE400AB28FC /* Main.storyboard */,
-				2A167EE21C3202E500AB28FC /* IntroductionViewController.h */,
-				2A167EE31C3202E500AB28FC /* IntroductionViewController.m */,
-				2A167EEE1C3247CB00AB28FC /* NextAnimation.h */,
-				2A167EEF1C3247CB00AB28FC /* NextAnimation.m */,
-				2A167ED01C31D92100AB28FC /* Project.h */,
-				2A167ED41C31DF6700AB28FC /* Project.m */,
-				2A167EEB1C32378D00AB28FC /* ProjectViewController.h */,
-				2A167EEC1C32378D00AB28FC /* ProjectViewController.m */,
-				2A167ECD1C31D19C00AB28FC /* ProjectCollectionViewCell.h */,
-				2A167ECE1C31D19C00AB28FC /* ProjectCollectionViewCell.m */,
-				2A167EE81C32035B00AB28FC /* UIView+Pulse.h */,
-				2A167EE91C32035B00AB28FC /* UIView+Pulse.m */,
-				2A167EDE1C31F72A00AB28FC /* ProjectCollectionView.xib */,
-				2A167EE01C31F76700AB28FC /* ProjectCollectionViewCell.xib */,
 				2A167EB51C2DFDE400AB28FC /* Assets.xcassets */,
 				2A167EB71C2DFDE400AB28FC /* LaunchScreen.storyboard */,
 				2A167EBA1C2DFDE400AB28FC /* Info.plist */,
@@ -105,9 +104,87 @@
 		2A167EA91C2DFDE400AB28FC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2A167EF11C3339FF00AB28FC /* MapKit.framework */,
 				2A167EAA1C2DFDE400AB28FC /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2A167EF91C33744300AB28FC /* About Me */ = {
+			isa = PBXGroup;
+			children = (
+				2A167EF31C333A1D00AB28FC /* AboutMeViewController.h */,
+				2A167EF41C333A1D00AB28FC /* AboutMeViewController.m */,
+				2A167EFA1C33744800AB28FC /* Cells */,
+			);
+			name = "About Me";
+			sourceTree = "<group>";
+		};
+		2A167EFA1C33744800AB28FC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2A167EFB1C33745600AB28FC /* ImageAlbumCollectionViewCell.h */,
+				2A167EFC1C33745600AB28FC /* ImageAlbumCollectionViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		2A167EFE1C338D3F00AB28FC /* Introduction */ = {
+			isa = PBXGroup;
+			children = (
+				2A167EE21C3202E500AB28FC /* IntroductionViewController.h */,
+				2A167EE31C3202E500AB28FC /* IntroductionViewController.m */,
+			);
+			name = Introduction;
+			sourceTree = "<group>";
+		};
+		2A167EFF1C338D4B00AB28FC /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				2A167EEE1C3247CB00AB28FC /* NextAnimation.h */,
+				2A167EEF1C3247CB00AB28FC /* NextAnimation.m */,
+			);
+			name = Transition;
+			sourceTree = "<group>";
+		};
+		2A167F001C338D5400AB28FC /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				2A167EE81C32035B00AB28FC /* UIView+Pulse.h */,
+				2A167EE91C32035B00AB28FC /* UIView+Pulse.m */,
+				2A167EF61C336F3E00AB28FC /* UIViewController+Backing.h */,
+				2A167EF71C336F3E00AB28FC /* UIViewController+Backing.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		2A167F011C338D5D00AB28FC /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				2A167EEB1C32378D00AB28FC /* ProjectViewController.h */,
+				2A167EEC1C32378D00AB28FC /* ProjectViewController.m */,
+				2A167F021C338D6C00AB28FC /* Models */,
+				2A167F031C338D7800AB28FC /* Cells */,
+			);
+			name = Projects;
+			sourceTree = "<group>";
+		};
+		2A167F021C338D6C00AB28FC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2A167ED01C31D92100AB28FC /* Project.h */,
+				2A167ED41C31DF6700AB28FC /* Project.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2A167F031C338D7800AB28FC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2A167ECD1C31D19C00AB28FC /* ProjectCollectionViewCell.h */,
+				2A167ECE1C31D19C00AB28FC /* ProjectCollectionViewCell.m */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +218,11 @@
 				TargetAttributes = {
 					2A167EA51C2DFDE400AB28FC = {
 						CreatedOnToolsVersion = 7.1.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -167,8 +249,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A167EE11C31F76700AB28FC /* ProjectCollectionViewCell.xib in Resources */,
-				2A167EDF1C31F72A00AB28FC /* ProjectCollectionView.xib in Resources */,
 				2A167EB91C2DFDE400AB28FC /* LaunchScreen.storyboard in Resources */,
 				2A167EB61C2DFDE400AB28FC /* Assets.xcassets in Resources */,
 				2A167EB41C2DFDE400AB28FC /* Main.storyboard in Resources */,
@@ -182,7 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A167EFD1C33745600AB28FC /* ImageAlbumCollectionViewCell.m in Sources */,
+				2A167EF81C336F3E00AB28FC /* UIViewController+Backing.m in Sources */,
 				2A167EE41C3202E500AB28FC /* IntroductionViewController.m in Sources */,
+				2A167EF51C333A1D00AB28FC /* AboutMeViewController.m in Sources */,
 				2A167EF01C3247CB00AB28FC /* NextAnimation.m in Sources */,
 				2A167ECF1C31D19C00AB28FC /* ProjectCollectionViewCell.m in Sources */,
 				2A167EEA1C32035B00AB28FC /* UIView+Pulse.m in Sources */,
@@ -301,10 +384,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Me/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.ayush.Me;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Me/Me-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -313,10 +399,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Me/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.ayush.Me;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Me/Me-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -340,6 +428,7 @@
 				2A167EBF1C2DFDE400AB28FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

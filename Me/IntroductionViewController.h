@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface IntroductionViewController : UIViewController <UIViewControllerTransitioningDelegate>
+@interface IntroductionViewController : UIViewController
 {
     int currentSpinningIndex;
 }

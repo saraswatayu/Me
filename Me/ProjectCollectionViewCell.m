@@ -23,7 +23,7 @@
 - (void)setup
 {
     self.layer.masksToBounds = NO;
-    self.layer.shadowOpacity = 0.75f;
+    self.layer.shadowOpacity = 0.5f;
     self.layer.shadowRadius = 5.0f;
     self.layer.shadowOffset = CGSizeZero;
     self.layer.shadowPath = [UIBezierPath bezierPathWithRect:self.bounds].CGPath;
@@ -36,10 +36,10 @@
     nameLabel.text = project.name;
     descriptionLabel.text = project.details;
     
-    if (project.link == NULL)
-        [linkButton setTitle:@"TRY A DEMO" forState:UIControlStateNormal];
+    if ([project.link containsString:@"itms://"])
+        [linkButton setTitle:@"APP STORE" forState:UIControlStateNormal];
     else
-        [linkButton setTitle:@"CHECK IT OUT" forState:UIControlStateNormal];
+        [linkButton setTitle:@"GITHUB" forState:UIControlStateNormal];
 }
 
 @end

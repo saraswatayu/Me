@@ -8,12 +8,25 @@
 
 #import "NextAnimation.h"
 
-@implementation NextAnimation
-{
-    BOOL presenting;
-}
+@interface NextAnimation()
 
-#define duration 2.0f
+@property (nonatomic) BOOL direction;
+
+@end
+
+@implementation NextAnimation
+@synthesize direction;
+
+#define duration 1.0f
+
+- (instancetype)initWithDirection:(BOOL)forward
+{
+    self = [super init];
+    if (self) {
+        self.direction = forward;
+    }
+    return self;
+}
 
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext
 {
@@ -24,22 +37,29 @@
 {
     UIView *containerView = [transitionContext containerView];
     
-    UIView *fromArrowView = [[transitionContext viewForKey:UITransitionContextFromViewKey] viewWithTag:10];
+    UIView *fromView = [transitionContext viewForKey:UITransitionContextFromViewKey];
+    fromView.frame = containerView.frame;
+    fromView.alpha = 1.0f;
+    
     UIView *toView = [transitionContext viewForKey:UITransitionContextToViewKey];
-    [toView setFrame:CGRectMake(0, containerView.frame.size.height, containerView.frame.size.width, containerView.frame.size.height)];
-    toView.alpha = 0.0f;
+    toView.frame = CGRectMake(containerView.frame.origin.x, direction ? containerView.frame.size.height - 58 : -containerView.frame.size.height + 58, containerView.frame.size.width, containerView.frame.size.height);
+    toView.alpha = 1.0f;
     
-    [containerView addSubview:fromArrowView];
     [containerView addSubview:toView];
+    [containerView addSubview:fromView];
     
+    UIView *arrowToRotate = direction ? [fromView viewWithTag:10] : [fromView viewWithTag:5];
+
     [UIView animateWithDuration:duration / 4.0f animations:^{
-        [containerView viewWithTag:10].transform = CGAffineTransformMakeRotation(M_PI);
-      
+        arrowToRotate.transform = CGAffineTransformMakeRotation(direction ? M_PI : -M_PI);
     } completion:^(BOOL finished){
-        [UIView animateWithDuration:1.5f * duration / 2.0f animations:^{
-            toView.frame = containerView.frame;
-            toView.alpha = 1.0f;
-        } completion:^(BOOL finished) {
+        [UIView animateWithDuration:3 * duration / 4.0f animations:^{
+            [fromView setFrame:CGRectMake(0, direction ? -containerView.frame.size.height + 58 : containerView.frame.size.height - 58, fromView.frame.size.width, fromView.frame.size.height)];
+            [toView setFrame:containerView.frame];
+        } completion:^(BOOL finished){
+            arrowToRotate.transform = CGAffineTransformMakeRotation(0);
+            fromView.alpha = 0.0f;
+            [fromView removeFromSuperview];
             [transitionContext completeTransition:YES];
         }];
     }];

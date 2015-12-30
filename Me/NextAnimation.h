@@ -10,4 +10,6 @@
 
 @interface NextAnimation : NSObject <UIViewControllerAnimatedTransitioning>
 
+- (instancetype)initWithDirection:(BOOL)forward;
+
 @end
