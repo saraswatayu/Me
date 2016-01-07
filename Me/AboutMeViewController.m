@@ -59,6 +59,12 @@
     [self.nextButton startPulsing];
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [self scrollViewDidScroll:self.collectionView];
+}
+
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
@@ -84,7 +90,7 @@
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {
-    return UIEdgeInsetsMake(0, self.view.frame.size.width / 2 - 160, 0, self.view.frame.size.width / 2 - 160);
+    return UIEdgeInsetsMake(0, self.view.frame.size.width / 2 - 140, 0, self.view.frame.size.width / 2 - 140);
 }
 
 #pragma mark <UIScrollViewDelegate>
@@ -94,6 +100,7 @@
     for (ImageAlbumCollectionViewCell *cell in self.collectionView.visibleCells)
     {
         cell.innerTargetView.frame = CGRectMake((self.collectionView.contentOffset.x - cell.frame.origin.x) / 30 + (cell.frame.size.width / 2 - 10), cell.innerTargetView.frame.origin.y, cell.innerTargetView.frame.size.width, cell.innerTargetView.frame.size.height);
+        cell.innerTargetView.hidden = false;
     }
 }
 

@@ -1,5 +1,7 @@
 # Me
 
+For optimal viewing, please run "Me" on an iPhone 5, 5s, 6, 6 Plus, 6s, or 6s Plus device or simulator.
+
 ## Developer
 
 Ayush Saraswat (<saraswatayu@gmail.com>)
