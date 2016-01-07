@@ -1,6 +1,6 @@
 # Me
 
-For optimal viewing, please run "Me" on an iPhone 5, 5s, 6, 6 Plus, 6s, or 6s Plus device or simulator.
+"Me" was designed for the iPhone 6 and 6s. It also supports the iPhone 5, 5s, 6 Plus, and 6s Plus.
 
 ## Developer
 
