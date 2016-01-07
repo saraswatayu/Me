@@ -17,6 +17,6 @@
 @property (nonatomic, weak) IBOutlet UILabel *titleLabel;
 @property (nonatomic, weak) IBOutlet UILabel *descriptionLabel;
 
-- (void)configureForImages:(NSArray *)images withTitle:(NSString *)title andDescription:(NSString *)description;
+- (void)configureForImage:(NSArray *)images withTitle:(NSString *)title andDescription:(NSString *)description;
 
 @end

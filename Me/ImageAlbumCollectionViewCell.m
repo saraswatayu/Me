@@ -30,7 +30,7 @@
     self.layer.shouldRasterize = NO;
 }
 
-- (void)configureForImages:(NSArray *)images withTitle:(NSString *)title andDescription:(NSString *)description
+- (void)configureForImage:(UIImage *)image withTitle:(NSString *)title andDescription:(NSString *)description
 {
     self.targetView.layer.cornerRadius = 20.0f;
     self.targetView.layer.borderColor = [UIColor lightGrayColor].CGColor;
@@ -38,12 +38,7 @@
     
     self.innerTargetView.layer.cornerRadius = 10.0f;
     
-    [self.albumImageView stopAnimating];
-    
-    self.albumImageView.animationImages = images;
-    self.albumImageView.animationRepeatCount = 0;
-    self.albumImageView.animationDuration = [images count] * 2.0f;
-    [self.albumImageView startAnimating];
+    self.albumImageView.image = image;
     
     self.titleLabel.text = title;
     self.descriptionLabel.text = description;

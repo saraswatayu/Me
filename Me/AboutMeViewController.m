@@ -21,27 +21,40 @@
 @implementation AboutMeViewController
 @synthesize components;
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+
+        // initialize components list
+        // TODO: - use a plist to easily change this instead of hardcoding it
+
+        components = @[@{
+                           @"image": [UIImage imageNamed:@"LRCentral"],
+                           @"title": @"High School - 2010",
+                           @"description": @"The transition to high school was when I discovered a new interest in software development. It was also around this time that I realized I needed a way to get away from it all, which I found in swimming."},
+                       @{
+                           @"image": [UIImage imageNamed:@"USC"],
+                           @"title": @"USC - 2014",
+                           @"description": @"By 2014, I had become far more passionate about software development than I had ever expected, but I still wasn't sure if that's all I wanted to study. So I packed my bags and left home to study Computer Science and Business Administration at USC."},
+                       @{
+                           @"image": [UIImage imageNamed:@"Triathlon"],
+                           @"title": @"Discovering New Hobbies",
+                           @"description": @"I'm always pushing my limits and now that my swimming career was over, I decided to turn to something just a little bit harder. Now I'm a part of USC's triathlon team, where I train for ultra-endurance running and triathlon events."},
+                       @{
+                           @"image": [UIImage imageNamed:@"Udacity Logo"],
+                           @"title": @"Learning and Teaching",
+                           @"description": @"I now work at Udacity, where every day I get to learn more about iOS development and teach others who are just diving into it."
+                           }];
+    }
+    return self;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
     
-    components = @[@{
-                       @"images": @[[UIImage imageNamed:@"LRCentral"]],
-                       @"title": @"High School - 2010",
-                       @"description": @"The transition to high school was when I discovered a new interest in software development. It was also around this time that I realized I needed a way to get away from it all, which I found in swimming."},
-                   @{
-                       @"images": @[[UIImage imageNamed:@"USC"]],
-                       @"title": @"USC - 2014",
-                       @"description": @"By 2014, I had become far more passionate about software development than I had ever expected, but I still wasn't sure if that's all I wanted to study. So I packed my bags and left home to study Computer Science and Business Administration at USC."},
-                   @{
-                       @"images": @[[UIImage imageNamed:@"Triathlon"]],
-                       @"title": @"Discovering New Hobbies",
-                       @"description": @"I'm always pushing my limits and now that my swimming career was over, I decided to turn to something just a little bit harder. Now I'm a part of USC's triathlon team, where I train for ultra-endurance running and triathlon events."},
-                   @{
-                       @"images": @[[UIImage imageNamed:@"Udacity Logo"]],
-                       @"title": @"Learning and Teaching",
-                       @"description": @"I now work at Udacity, where every day I get to learn more about iOS development and teach others who are just diving into it."
-                    }];
-    
+    // start pulsing buttons
     [self.previousButton startPulsing];
     [self.nextButton startPulsing];
 }
@@ -60,11 +73,21 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     ImageAlbumCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ImageAlbumCell" forIndexPath:indexPath];
     
+    // configure cell
     NSDictionary *componentDetails = [components objectAtIndex:indexPath.section];
-    [cell configureForImages:[componentDetails objectForKey:@"images"] withTitle:[componentDetails objectForKey:@"title"] andDescription:[componentDetails objectForKey:@"description"]];
+    [cell configureForImage:[componentDetails objectForKey:@"image"] withTitle:[componentDetails objectForKey:@"title"] andDescription:[componentDetails objectForKey:@"description"]];
 
     return cell;
 }
+
+#pragma mark <UICollectionViewFlowDelegateLayout>
+
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
+{
+    return UIEdgeInsetsMake(0, self.view.frame.size.width / 2 - 160, 0, self.view.frame.size.width / 2 - 160);
+}
+
+#pragma mark <UIScrollViewDelegate>
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
@@ -74,11 +97,11 @@
     }
 }
 
-#pragma mark <UICollectionViewLayoutDelegate>
+#pragma mark Navigation
 
-- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    return UIEdgeInsetsMake(0, self.view.frame.size.width / 2 - 160, 0, self.view.frame.size.width / 2 - 160);
+    segue.destinationViewController.transitioningDelegate = self;
 }
 
 @end

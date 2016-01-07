@@ -26,6 +26,10 @@
 {
     self = [super initWithCoder:coder];
     if (self) {
+        
+        // initialize projects list
+        // TODO: - use a plist to easily change this instead of hardcoding it
+        
         Project *kaBadges = [[Project alloc] initWithName:@"KA Badges" andIcon:[UIImage imageNamed:@"KA Badges"] andDescription:@"a short exercise to combine the worlds of networking and Core Data concurrency" andLink:NULL];
         Project *virtualTourist = [[Project alloc] initWithName:@"Virtual Tourist" andIcon:[UIImage imageNamed:@"Virtual Tourist"] andDescription:@"a short exercise using NSURLSession, MapKit, and Core Data" andLink:NULL];
         Project *udacity = [[Project alloc] initWithName:@"Udacity" andIcon:[UIImage imageNamed:@"Udacity"] andDescription:@"an effort to completely rethink Udacity's mobile offerings - keep checking back to our website for updates" andLink:@"itms://itunes.apple.com/us/app/udacity-learn-programming/id819700933?mt=8"];
@@ -37,11 +41,18 @@
     return self;
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
+    [self.pageControl setNumberOfPages:[projects count]];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
     [self.previousButton startPulsing];
-    [self.nextButton startPulsing];
 }
 
 #pragma mark <UICollectionViewDataSource>
@@ -58,6 +69,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     ProjectCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ProjectCell" forIndexPath:indexPath];
     
+    // configure cell for project
     [cell configureForProject:[projects objectAtIndex:indexPath.section]];
     
     return cell;
@@ -68,20 +80,33 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     Project *selectedProject = [projects objectAtIndex:indexPath.section];
+    
+    // if the project has a link, it opens up in the app store -- otherwise, use the segue to launch a "demo" of it
     if (selectedProject.link == NULL)
-    {
         [self performSegueWithIdentifier:selectedProject.name sender:self];
-    }
     else
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:selectedProject.link]];
 }
+
+#pragma mark <UICollectionViewFlowDelegateLayout>
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {
     return UIEdgeInsetsMake(0, self.view.frame.size.width / 2 - 88, 0, self.view.frame.size.width / 2 - 88);
 }
 
-#
+#pragma mark <UIScrollViewDelegate>
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    self.pageControl.currentPage = self.collectionView.contentOffset.x / self.collectionView.frame.size.width;
+}
+
+#pragma mark Navigation
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    segue.destinationViewController.transitioningDelegate = self;
+}
 
 @end

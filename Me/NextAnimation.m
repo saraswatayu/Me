@@ -50,6 +50,11 @@
     
     UIView *arrowToRotate = direction ? [fromView viewWithTag:10] : [fromView viewWithTag:5];
 
+    // the transition:
+    // 1. overlap views so the arrows match
+    // 2. rotate the arrow
+    // 3. slide in new view
+    // 4. hide old view
     [UIView animateWithDuration:duration / 4.0f animations:^{
         arrowToRotate.transform = CGAffineTransformMakeRotation(direction ? M_PI : -M_PI);
     } completion:^(BOOL finished){

@@ -21,19 +21,33 @@
 @implementation IntroductionViewController
 @synthesize rotatingLabels;
 
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+        rotatingLabels = @[@"student", @"athlete", @"developer", @"photographer", @"wannabe designer", @"and so much more..."];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    rotatingLabels = @[@"student", @"athlete", @"developer", @"photographer", @"wannabe designer", @"and so much more..."];
-    
     currentSpinningIndex = 0;
     [NSTimer scheduledTimerWithTimeInterval:2.0f target:self selector:@selector(updateSpinnerText:) userInfo:nil repeats:YES];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
     
+    // start pulsing button
     [self.nextButton startPulsing];
 }
 
 - (void)updateSpinnerText:(NSTimer *)timer
 {
+    // rotate text through a fade
     CATransition *rotationAnimation = [CATransition animation];
     rotationAnimation.duration = 1.0f;
     rotationAnimation.type = kCATransitionFade;
@@ -44,6 +58,11 @@
     currentSpinningIndex++;
     if (currentSpinningIndex == [rotatingLabels count])
         currentSpinningIndex = 0;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    segue.destinationViewController.transitioningDelegate = self;
 }
 
 @end

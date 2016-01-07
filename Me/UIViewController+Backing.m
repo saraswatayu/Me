@@ -11,10 +11,7 @@
 
 @implementation UIViewController (Backing)
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    segue.destinationViewController.transitioningDelegate = self;
-}
+// assigns the proper transition to view transitions
 
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
 {

@@ -12,6 +12,8 @@
 
 - (void)startPulsing
 {
+    // pulses any UIView
+    
     CABasicAnimation *pulseAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
     pulseAnimation.duration = 1.0f;
     pulseAnimation.repeatCount = HUGE_VALF;

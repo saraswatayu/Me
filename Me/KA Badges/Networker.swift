@@ -83,9 +83,13 @@ final class Networker : NSObject {
                         // update existing objects 
                         
                         if type is Badge.Type {
-                            (existing as! Badge).updateBadgeInfo(object)
+                            self.managedObjectContext.performBlock({
+                                (existing as! Badge).updateBadgeInfo(object)
+                            })
                         } else {
-                            (existing as! Category).updateCategoryInfo(object)
+                            self.managedObjectContext.performBlock({
+                                (existing as! Category).updateCategoryInfo(object)
+                            })
                         }
                     } else {
                         // create new objects since they don't already exist

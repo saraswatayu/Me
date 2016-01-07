@@ -42,7 +42,6 @@
 		2A167F4B1C3444FB00AB28FC /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A167F421C3444FB00AB28FC /* Picture.swift */; };
 		2A167F4C1C3444FB00AB28FC /* PictureSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A167F431C3444FB00AB28FC /* PictureSelectionViewController.swift */; };
 		2A167F4D1C3444FB00AB28FC /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A167F441C3444FB00AB28FC /* Pin.swift */; };
-		2A167F531C34487200AB28FC /* imgXButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A167F521C34487200AB28FC /* imgXButton.png */; };
 		C62B32FDCE6D6C125A2C2845 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E4182EB000DF1AB1104AC8 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,7 +84,6 @@
 		2A167F2A1C343F7C00AB28FC /* KABadges.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KABadges.xcdatamodel; sourceTree = "<group>"; };
 		2A167F2B1C343F7C00AB28FC /* Networker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Networker.swift; path = "KA Badges/Networker.swift"; sourceTree = "<group>"; };
 		2A167F2C1C343F7C00AB28FC /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = "KA Badges/Utilities.swift"; sourceTree = "<group>"; };
-		2A167F371C34400400AB28FC /* Me-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Me-Bridging-Header.h"; sourceTree = "<group>"; };
 		2A167F381C34415100AB28FC /* KACoreDataStackManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KACoreDataStackManager.swift; path = "KA Badges/KACoreDataStackManager.swift"; sourceTree = "<group>"; };
 		2A167F3B1C3444FB00AB28FC /* CollectionViewCellForPicture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCellForPicture.swift; sourceTree = "<group>"; };
 		2A167F3C1C3444FB00AB28FC /* CoreDataStackManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStackManager.swift; sourceTree = "<group>"; };
@@ -96,7 +94,6 @@
 		2A167F421C3444FB00AB28FC /* Picture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
 		2A167F431C3444FB00AB28FC /* PictureSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureSelectionViewController.swift; sourceTree = "<group>"; };
 		2A167F441C3444FB00AB28FC /* Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pin.swift; sourceTree = "<group>"; };
-		2A167F521C34487200AB28FC /* imgXButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgXButton.png; sourceTree = "<group>"; };
 		87E4182EB000DF1AB1104AC8 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E85718997F6AD47A2F2EEE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,10 +148,8 @@
 				2A167F011C338D5D00AB28FC /* Projects */,
 				2A167EAC1C2DFDE400AB28FC /* AppDelegate.h */,
 				2A167EAD1C2DFDE400AB28FC /* AppDelegate.m */,
-				2A167F371C34400400AB28FC /* Me-Bridging-Header.h */,
 				2A167EB21C2DFDE400AB28FC /* Main.storyboard */,
 				2A167EB51C2DFDE400AB28FC /* Assets.xcassets */,
-				2A167F521C34487200AB28FC /* imgXButton.png */,
 				2A167EB71C2DFDE400AB28FC /* LaunchScreen.storyboard */,
 				2A167EBA1C2DFDE400AB28FC /* Info.plist */,
 				2A167EA91C2DFDE400AB28FC /* Supporting Files */,
@@ -431,7 +426,6 @@
 			files = (
 				2A167EB91C2DFDE400AB28FC /* LaunchScreen.storyboard in Resources */,
 				2A167EB61C2DFDE400AB28FC /* Assets.xcassets in Resources */,
-				2A167F531C34487200AB28FC /* imgXButton.png in Resources */,
 				2A167F331C343F7C00AB28FC /* KABadges.json in Resources */,
 				2A167EB41C2DFDE400AB28FC /* Main.storyboard in Resources */,
 				2A167F321C343F7C00AB28FC /* KABadgeCategories.json in Resources */,
@@ -640,7 +634,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.ayush.Me;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Me/Me-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -657,7 +651,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.ayush.Me;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Me/Me-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

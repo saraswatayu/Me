@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProjectViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate, UIViewControllerTransitioningDelegate>
+@interface ProjectViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate, UIScrollViewDelegate, UIViewControllerTransitioningDelegate>
 
 @property (nonatomic, weak) IBOutlet UICollectionView *collectionView;
+@property (nonatomic, weak) IBOutlet UIPageControl *pageControl;
 
 @property (nonatomic, weak) IBOutlet UIButton *previousButton;
-@property (nonatomic, weak) IBOutlet UIButton *nextButton;
 
 @end
