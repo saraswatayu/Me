@@ -99,7 +99,7 @@
 {
     for (ImageAlbumCollectionViewCell *cell in self.collectionView.visibleCells)
     {
-        cell.innerTargetView.frame = CGRectMake((self.collectionView.contentOffset.x - cell.frame.origin.x) / 30 + (cell.frame.size.width / 2 - 10), cell.innerTargetView.frame.origin.y, cell.innerTargetView.frame.size.width, cell.innerTargetView.frame.size.height);
+        cell.innerTargetView.frame = CGRectMake((self.collectionView.contentOffset.x - cell.frame.origin.x) / 30 + (cell.frame.size.width / 2 - 8), cell.innerTargetView.frame.origin.y, cell.innerTargetView.frame.size.width, cell.innerTargetView.frame.size.height);
         cell.innerTargetView.hidden = false;
     }
 }
